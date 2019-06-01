@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://jadhavshripal510@bitbucket.org/codingwala/krisp_webapp.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[remote "production"]
+	url = ssh://root@68.183.111.126/var/repo/site.git
+	fetch = +refs/heads/*:refs/remotes/production/*
