@@ -24,6 +24,10 @@ class providerotpcontroller extends Controller
 
     public function sendOtp(Request $request)
     {
+        
+        $this->validate($request, [
+            'mobile' => 'required|max:10|min:7',     
+        ]);
         $baseurl = "https://sms.dtechghana.com/api/v1/send";
         $arrContextOptions=array(
             "ssl"=>array(

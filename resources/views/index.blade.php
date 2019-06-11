@@ -20,7 +20,7 @@
                             </a>
                         </div>
                     </div>
-                   {{--  <div class="row no-margin fields">
+                    <div class="row no-margin fields">
                         <div class="left">
                             <img src="{{ asset('asset/img/ride-form-icon.png') }}">
                         </div>
@@ -30,7 +30,7 @@
                                 <h5>SIGN UP <i class="fa fa-chevron-right"></i></h5>
                             </a>
                         </div>
-                    </div> --}}
+                    </div>  
                     <p class="note-or">Or <a href="{{ url('/provider/login') }}">sign in</a> with your rider account.
                     </p>
                 </div>

@@ -1,6 +1,4 @@
-@extends('provider.layout.app')
-
-@section('content')
+<?php $__env->startSection('content'); ?>
 <div class="pro-dashboard-head">
     <div class="container">
         <a href="#" class="pro-head-link active">Drive Now</a>
@@ -15,11 +13,11 @@
         </div>
     </div>
 </div>
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('scripts')
-<script type="text/javascript" src="{{asset('asset/js/rating.js')}}"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAP_KEY') }}&libraries=places" defer></script>
+<?php $__env->startSection('scripts'); ?>
+<script type="text/javascript" src="<?php echo e(asset('asset/js/rating.js')); ?>"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=<?php echo e(env('GOOGLE_MAP_KEY')); ?>&libraries=places" defer></script>
 <script type="text/javascript">
     var map;
     var routeMarkers = {
@@ -301,4 +299,5 @@
 
     }
 </script>
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('provider.layout.app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

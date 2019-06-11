@@ -16,11 +16,11 @@
 
             <div id="first_step">
                 <div class="col-md-4">
-                    <input  type="text" placeholder="+91" id="country_code" name="country_code" value="+91"/>
+                    <input  type="number" placeholder="+223" id="country_code" name="country_code" value="+223" readonly="" />
                 </div>
 
                 <div class="col-md-8">
-                    <input type="text" autofocus id="phone_number" class="form-control" placeholder="Enter Phone Number"
+                    <input type="number" autofocus id="phone_number" class="form-control" placeholder="Enter Phone Number"
                            name="mobile" value="{{ old('phone_number') }}"/ required="">
                 </div>
 

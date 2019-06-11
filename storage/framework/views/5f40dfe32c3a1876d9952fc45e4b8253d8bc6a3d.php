@@ -18,7 +18,17 @@
                             </a>
                         </div>
                     </div>
-                   
+                    <div class="row no-margin fields">
+                        <div class="left">
+                            <img src="<?php echo e(asset('asset/img/ride-form-icon.png')); ?>">
+                        </div>
+                        <div class="right">
+                            <a href="<?php echo e(url('/provider/register')); ?>">
+                                <h3>Sign up to Drive</h3>
+                                <h5>SIGN UP <i class="fa fa-chevron-right"></i></h5>
+                            </a>
+                        </div>
+                    </div>  
                     <p class="note-or">Or <a href="<?php echo e(url('/provider/login')); ?>">sign in</a> with your rider account.
                     </p>
                 </div>
